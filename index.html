@@ -4,225 +4,502 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Haul Ace Junk Removal | North Richland Hills, TX</title>
-<meta name="description" content="Haul Ace is a local junk removal crew serving North Richland Hills, Hurst, Bedford, Watauga and Keller, TX. Send photos, get a clear price, and we load, haul and sweep.">
+<meta name="description" content="Local junk removal in North Richland Hills, Hurst, Bedford, Watauga and Keller, TX. Send photos, get a clear upfront price, and we load, haul and sweep.">
+<meta name="theme-color" content="#181B1F">
 <link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Haul Ace Junk Removal">
+<meta property="og:description" content="Clear the clutter. Ace the cleanup. Local junk removal in North Richland Hills and Northeast Tarrant County.">
 <meta property="og:image" content="https://p4d4psjk7j-web.github.io/haul-ace/logo.png">
+<meta property="og:url" content="https://p4d4psjk7j-web.github.io/haul-ace/">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Haul Ace",
+  "description": "Junk removal serving North Richland Hills and Northeast Tarrant County, TX.",
+  "url": "https://p4d4psjk7j-web.github.io/haul-ace/",
+  "logo": "https://p4d4psjk7j-web.github.io/haul-ace/logo.png",
+  "image": "https://p4d4psjk7j-web.github.io/haul-ace/logo.png",
+  "email": "haulacejunkremoval@gmail.com",
+  "slogan": "Clear the clutter. Ace the cleanup.",
+  "address": {"@type": "PostalAddress", "addressLocality": "North Richland Hills", "addressRegion": "TX", "addressCountry": "US"},
+  "areaServed": ["North Richland Hills, TX", "Hurst, TX", "Bedford, TX", "Watauga, TX", "Keller, TX"],
+  "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "17:00"}]
+}
+</script>
 <style>
   :root {
-    --navy: #181B1F;
-    --navy-2: #24282e;
-    --orange: #0276FC;
-    --orange-dark: #005fd1;
-    --cream: #FEFDFA;
-    --ink: #142536;
-    --muted: #4b5a68;
-    --line: #e3e6ea;
+    --ink: #181B1F;
+    --ink-2: #22262c;
+    --ink-3: #2d323a;
+    --blue: #0276FC;
+    --blue-dark: #005ed6;
+    --blue-soft: #e6f1ff;
+    --paper: #ffffff;
+    --mist: #f4f6f9;
+    --muted: #5b6573;
+    --line: #e2e6ec;
+    --radius: 16px;
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
-  body { margin: 0; font-family: Inter, system-ui, sans-serif; color: var(--ink); background: #f3f5f8; line-height: 1.6; }
-  h1, h2, h3 { font-family: Archivo, Inter, sans-serif; line-height: 1.1; margin: 0 0 .5em; }
+  body { margin: 0; font-family: Inter, system-ui, sans-serif; color: var(--ink); background: var(--paper); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  h1, h2, h3 { font-family: Archivo, Inter, sans-serif; line-height: 1.05; margin: 0 0 .5em; letter-spacing: -.01em; }
   a { color: inherit; }
-  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+  img { max-width: 100%; display: block; }
+  .wrap { max-width: 1160px; margin: 0 auto; padding: 0 20px; }
+  .kicker { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--blue); }
+  .kicker::before { content: ""; width: 22px; height: 3px; background: var(--blue); border-radius: 2px; }
+  svg.i { width: 26px; height: 26px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex: none; }
 
-  header.top { background: #fff; color: var(--navy); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 10; }
-  header.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
-  .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; font-family: Archivo, sans-serif; font-weight: 900; font-size: 22px; letter-spacing: .5px; }
-  .logo span { color: var(--orange); }
-  .logo img { width: 44px; height: 44px; }
-  nav a { text-decoration: none; margin-left: 22px; font-weight: 500; font-size: 15px; opacity: .9; }
-  nav a:hover { opacity: 1; color: var(--orange); }
-  @media (max-width: 680px) { nav a:not(.btn) { display: none; } }
+  /* Header */
+  .top { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.94); backdrop-filter: saturate(1.4) blur(10px); border-bottom: 1px solid var(--line); }
+  .top .wrap { display: flex; align-items: center; justify-content: space-between; height: 72px; gap: 16px; }
+  .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+  .brand img { width: 46px; height: 46px; }
+  .brand b { font-family: Archivo, sans-serif; font-weight: 900; font-size: 24px; letter-spacing: .02em; line-height: 1; }
+  .brand b span { color: var(--blue); }
+  .brand small { display: block; font-size: 10.5px; font-weight: 700; letter-spacing: .28em; color: var(--muted); margin-top: 3px; }
+  .menu { display: flex; align-items: center; gap: 26px; }
+  .menu a { text-decoration: none; font-weight: 600; font-size: 15px; color: var(--ink-3); }
+  .menu a:hover { color: var(--blue); }
+  .nav-cta { background: var(--ink); color: #fff !important; padding: 11px 18px; border-radius: 10px; transition: background .15s; }
+  .nav-cta:hover { background: var(--blue); }
+  @media (max-width: 860px) { .menu a:not(.nav-cta) { display: none; } }
 
-  .btn { display: inline-block; background: var(--orange); color: #fff; text-decoration: none; font-weight: 600; padding: 12px 22px; border-radius: 8px; transition: background .15s; }
-  .btn:hover { background: var(--orange-dark); }
-  .btn.small { padding: 8px 16px; font-size: 14px; }
-  .btn.ghost { background: transparent; border: 2px solid var(--cream); color: var(--cream); }
-  .btn.ghost:hover { background: rgba(255,255,255,.08); }
+  /* Hero */
+  .hero { position: relative; background: var(--ink); color: #fff; overflow: hidden; }
+  .hero::before { content: ""; position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px); background-size: 44px 44px; mask-image: radial-gradient(ellipse at 70% 40%, #000 20%, transparent 75%); }
+  .hero::after { content: ""; position: absolute; width: 720px; height: 720px; right: -200px; top: -180px; background: radial-gradient(circle, rgba(2,118,252,.35), transparent 62%); }
+  .hero .wrap { position: relative; z-index: 1; display: grid; grid-template-columns: 1.1fr .9fr; gap: 56px; align-items: center; padding-top: 84px; padding-bottom: 96px; }
+  .hero h1 { font-size: clamp(42px, 6.4vw, 76px); font-weight: 900; text-transform: uppercase; margin: 18px 0 22px; }
+  .hero h1 span { color: var(--blue); display: block; }
+  .hero .lede { font-size: 19px; color: #c9d0da; max-width: 540px; margin: 0 0 34px; }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+  .cta-primary { display: inline-flex; align-items: center; gap: 10px; background: var(--blue); color: #fff; text-decoration: none; font-weight: 700; font-size: 17px; padding: 17px 26px; border-radius: 12px; box-shadow: 0 10px 30px rgba(2,118,252,.4); transition: transform .15s, box-shadow .15s, background .15s; }
+  .cta-primary:hover { background: var(--blue-dark); transform: translateY(-2px); box-shadow: 0 14px 36px rgba(2,118,252,.5); }
+  .cta-primary svg { width: 20px; height: 20px; }
+  .cta-text { color: #fff; font-weight: 600; text-decoration: none; border-bottom: 2px solid rgba(255,255,255,.35); padding-bottom: 2px; }
+  .cta-text:hover { border-color: var(--blue); }
+  .hero-points { display: flex; flex-wrap: wrap; gap: 10px 22px; margin-top: 38px; padding-top: 26px; border-top: 1px solid rgba(255,255,255,.12); font-size: 15px; color: #dfe4ea; }
+  .hero-points span { display: inline-flex; align-items: center; gap: 8px; }
+  .hero-points svg { width: 18px; height: 18px; color: var(--blue); stroke-width: 2.6; }
+  .logo-card { background: #fff; border-radius: 26px; padding: 30px; box-shadow: 0 30px 80px rgba(0,0,0,.45); transform: rotate(1.5deg); position: relative; }
+  .logo-card::after { content: "Locally owned · NRH, TX"; position: absolute; left: -18px; bottom: 26px; background: var(--blue); color: #fff; font-weight: 700; font-size: 13px; padding: 9px 14px; border-radius: 10px; transform: rotate(-4deg); box-shadow: 0 10px 24px rgba(2,118,252,.45); }
+  @media (max-width: 900px) {
+    .hero .wrap { grid-template-columns: 1fr; padding-top: 56px; padding-bottom: 72px; gap: 44px; }
+    .logo-card { max-width: 420px; margin: 0 auto; transform: none; }
+  }
 
-  .hero { background: var(--navy); color: var(--cream); padding: 80px 0 96px; position: relative; overflow: hidden; }
-  .hero .wrap { display: grid; grid-template-columns: 1.2fr 1fr; gap: 48px; align-items: center; }
-  .hero-logo { background: #fff; border-radius: 20px; padding: 24px; box-shadow: 0 20px 50px rgba(0,0,0,.35); }
-  .hero-logo img { width: 100%; height: auto; display: block; }
-  @media (max-width: 820px) { .hero .wrap { grid-template-columns: 1fr; } .hero-logo { max-width: 420px; } }
-  .eyebrow { color: var(--orange); font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; font-size: 13px; }
-  .hero h1 { font-size: clamp(38px, 6vw, 64px); font-weight: 900; max-width: 720px; }
-  .hero h1 em { font-style: normal; color: var(--orange); }
-  .hero p { font-size: 19px; max-width: 580px; opacity: .9; margin: 0 0 32px; }
-  .hero .actions { display: flex; gap: 14px; flex-wrap: wrap; position: relative; z-index: 1; }
+  /* Trust strip */
+  .strip { background: var(--blue); color: #fff; }
+  .strip .wrap { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
+  .strip div { padding: 22px 18px; display: flex; gap: 12px; align-items: center; font-weight: 600; font-size: 15px; border-right: 1px solid rgba(255,255,255,.22); }
+  .strip div:last-child { border-right: 0; }
+  @media (max-width: 860px) { .strip .wrap { grid-template-columns: 1fr 1fr; } .strip div:nth-child(2) { border-right: 0; } .strip div:nth-child(-n+2) { border-bottom: 1px solid rgba(255,255,255,.22); } }
 
-  section { padding: 80px 0; }
-  .section-head { max-width: 640px; margin-bottom: 40px; }
-  .section-head h2 { font-size: clamp(28px, 4vw, 40px); }
-  .section-head p { color: var(--muted); margin: 0; }
+  section { padding: 96px 0; }
+  .head { max-width: 660px; margin-bottom: 48px; }
+  .head h2 { font-size: clamp(32px, 4.4vw, 48px); font-weight: 900; margin-top: 14px; }
+  .head p { color: var(--muted); font-size: 18px; margin: 0; }
+  .center { text-align: center; margin-left: auto; margin-right: auto; }
 
-  .grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
-  .card { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 26px; }
-  .card h3 { font-size: 20px; }
-  .card p { color: var(--muted); margin: 0; font-size: 15px; }
-  .card .tag { display: inline-block; font-size: 12px; font-weight: 600; color: var(--orange-dark); background: #e3efff; border-radius: 99px; padding: 3px 10px; margin-bottom: 12px; }
+  /* Services */
+  .svc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  @media (max-width: 960px) { .svc-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 620px) { .svc-grid { grid-template-columns: 1fr; } }
+  .svc { border: 1px solid var(--line); border-radius: var(--radius); padding: 30px; background: #fff; transition: border-color .2s, box-shadow .2s, transform .2s; }
+  .svc:hover { border-color: var(--blue); box-shadow: 0 18px 40px rgba(24,27,31,.08); transform: translateY(-3px); }
+  .svc .ico { width: 54px; height: 54px; border-radius: 14px; background: var(--blue-soft); color: var(--blue); display: grid; place-items: center; margin-bottom: 20px; }
+  .svc h3 { font-size: 21px; font-weight: 800; }
+  .svc p { color: var(--muted); margin: 0; font-size: 15.5px; }
 
-  .steps { counter-reset: step; }
-  .steps .card { position: relative; padding-top: 58px; }
-  .steps .card::before { counter-increment: step; content: counter(step); position: absolute; top: 20px; left: 26px; width: 30px; height: 30px; border-radius: 50%; background: var(--navy); color: var(--cream); font-family: Archivo, sans-serif; font-weight: 700; display: grid; place-items: center; font-size: 15px; }
+  /* Pricing */
+  .pricing { background: var(--mist); }
+  .price-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; align-items: stretch; }
+  @media (max-width: 900px) { .price-grid { grid-template-columns: 1fr; max-width: 480px; } }
+  .price { background: #fff; border-radius: var(--radius); padding: 34px 30px; border: 1px solid var(--line); display: flex; flex-direction: column; position: relative; }
+  .price.featured { background: var(--ink); color: #fff; border-color: var(--ink); box-shadow: 0 24px 60px rgba(24,27,31,.25); }
+  .price .badge { position: absolute; top: -13px; left: 30px; background: var(--blue); color: #fff; font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 6px 12px; border-radius: 99px; }
+  .price h3 { font-size: 20px; font-weight: 800; margin-bottom: 6px; }
+  .price .from { font-size: 14px; color: var(--muted); }
+  .price.featured .from, .price.featured li { color: #c9d0da; }
+  .price .amt { font-family: Archivo, sans-serif; font-weight: 900; font-size: 52px; line-height: 1; margin: 6px 0 20px; }
+  .price .amt small { font-size: 20px; vertical-align: top; margin-right: 2px; }
+  .price ul { list-style: none; padding: 0; margin: 0 0 6px; font-size: 15px; color: var(--muted); }
+  .price li { padding: 7px 0 7px 28px; position: relative; }
+  .price li::before { content: ""; position: absolute; left: 0; top: 12px; width: 16px; height: 16px; border-radius: 50%; background: var(--blue) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5L20 7'/%3E%3C/svg%3E") center/10px no-repeat; }
+  .price-note { margin-top: 26px; font-size: 15px; color: var(--muted); }
+  .price-note strong { color: var(--ink); }
 
-  .band { background: var(--navy); color: var(--cream); }
-  .band .section-head p { color: rgba(247,243,234,.75); }
-  .areas { display: flex; flex-wrap: wrap; gap: 12px; }
-  .areas span { border: 1.5px solid rgba(247,243,234,.35); border-radius: 99px; padding: 8px 18px; font-weight: 500; }
-  .areas span.main { background: var(--orange); border-color: var(--orange); color: #fff; }
+  /* Process */
+  .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; position: relative; }
+  .steps::before { content: ""; position: absolute; top: 31px; left: 12%; right: 12%; height: 2px; background: repeating-linear-gradient(90deg, var(--blue) 0 10px, transparent 10px 18px); }
+  .step { text-align: center; padding: 0 16px; position: relative; }
+  .step .n { width: 64px; height: 64px; border-radius: 50%; background: var(--ink); color: #fff; font-family: Archivo, sans-serif; font-weight: 900; font-size: 24px; display: grid; place-items: center; margin: 0 auto 20px; border: 5px solid #fff; box-shadow: 0 0 0 2px var(--blue); }
+  .step h3 { font-size: 19px; font-weight: 800; }
+  .step p { color: var(--muted); font-size: 15px; margin: 0; }
+  @media (max-width: 860px) { .steps { grid-template-columns: 1fr 1fr; row-gap: 40px; } .steps::before { display: none; } }
+  @media (max-width: 520px) { .steps { grid-template-columns: 1fr; } }
 
-  .two { display: grid; gap: 20px; grid-template-columns: 1fr 1fr; }
-  @media (max-width: 760px) { .two { grid-template-columns: 1fr; } }
-  ul.check { list-style: none; padding: 0; margin: 0; }
-  ul.check li { padding: 8px 0 8px 30px; position: relative; border-bottom: 1px solid var(--line); }
-  ul.check li:last-child { border-bottom: 0; }
-  ul.check li::before { content: "✓"; position: absolute; left: 0; color: var(--orange); font-weight: 700; }
-  ul.check.no li::before { content: "✕"; color: #b4442b; }
+  /* Why */
+  .why { background: var(--ink); color: #fff; position: relative; overflow: hidden; }
+  .why::after { content: ""; position: absolute; left: -200px; bottom: -260px; width: 620px; height: 620px; background: radial-gradient(circle, rgba(2,118,252,.25), transparent 62%); }
+  .why .head p { color: #b3bcc8; }
+  .why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; position: relative; z-index: 1; }
+  @media (max-width: 760px) { .why-grid { grid-template-columns: 1fr; } }
+  .why-item { display: flex; gap: 18px; padding: 26px; border-radius: var(--radius); background: var(--ink-2); border: 1px solid var(--ink-3); }
+  .why-item .ico { width: 48px; height: 48px; border-radius: 12px; background: rgba(2,118,252,.16); color: #5aa6ff; display: grid; place-items: center; flex: none; }
+  .why-item h3 { font-size: 19px; font-weight: 800; margin-bottom: 6px; }
+  .why-item p { color: #b3bcc8; margin: 0; font-size: 15px; }
 
-  .contact { text-align: center; }
-  .contact .card { max-width: 620px; margin: 0 auto; padding: 44px 32px; }
-  .contact h2 { font-size: clamp(28px, 4vw, 40px); }
-  .contact .email { display: block; font-size: 20px; font-weight: 600; margin: 18px 0 26px; color: var(--navy); word-break: break-all; }
-  .hours { color: var(--muted); font-size: 15px; margin-top: 22px; }
+  /* Items */
+  .items { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media (max-width: 760px) { .items { grid-template-columns: 1fr; } }
+  .items .box { border-radius: var(--radius); padding: 32px; border: 1px solid var(--line); }
+  .items .box.yes { background: var(--blue-soft); border-color: #cde2ff; }
+  .items h3 { font-size: 22px; font-weight: 800; display: flex; align-items: center; gap: 10px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 10px; }
+  .chips span { background: #fff; border: 1px solid var(--line); border-radius: 99px; padding: 8px 15px; font-size: 14.5px; font-weight: 500; }
+  .items .no .chips span { background: var(--mist); color: var(--muted); }
+  .items .note { font-size: 14px; color: var(--muted); margin: 18px 0 0; }
 
-  footer { background: var(--navy); color: rgba(247,243,234,.7); padding: 30px 0; font-size: 14px; }
-  footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
-  footer strong { color: var(--cream); }
+  /* Area */
+  .area { background: var(--mist); }
+  .area-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 40px; align-items: center; }
+  @media (max-width: 860px) { .area-grid { grid-template-columns: 1fr; } }
+  .towns { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 8px; }
+  .towns div { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; font-weight: 600; display: flex; align-items: center; gap: 10px; }
+  .towns div svg { color: var(--blue); width: 20px; height: 20px; }
+  .towns div.home { background: var(--ink); color: #fff; border-color: var(--ink); grid-column: span 2; }
+  .map { border-radius: 20px; overflow: hidden; border: 1px solid var(--line); box-shadow: 0 20px 50px rgba(24,27,31,.1); aspect-ratio: 4 / 3; background: #dfe5ec; }
+  .map iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+  /* FAQ */
+  .faq { max-width: 820px; margin: 0 auto; }
+  .faq details { border-bottom: 1px solid var(--line); padding: 4px 0; }
+  .faq summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 20px 0; font-weight: 700; font-size: 18px; }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after { content: "+"; font-family: Archivo, sans-serif; font-size: 28px; font-weight: 600; color: var(--blue); transition: transform .2s; line-height: 1; }
+  .faq details[open] summary::after { transform: rotate(45deg); }
+  .faq details p { margin: 0 0 22px; color: var(--muted); }
+
+  /* Quote */
+  .quote { background: var(--ink); color: #fff; }
+  .quote-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 56px; align-items: start; }
+  @media (max-width: 900px) { .quote-grid { grid-template-columns: 1fr; } }
+  .quote .head p { color: #b3bcc8; }
+  .contact-line { display: flex; gap: 14px; align-items: center; margin-top: 18px; color: #dfe4ea; }
+  .contact-line .ico { width: 46px; height: 46px; border-radius: 12px; background: var(--ink-3); color: #5aa6ff; display: grid; place-items: center; flex: none; }
+  .contact-line a { color: #fff; font-weight: 600; text-decoration: none; word-break: break-all; }
+  .contact-line small { display: block; color: #8d97a5; font-size: 13px; }
+  form.qf { background: #fff; color: var(--ink); border-radius: 22px; padding: 34px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; box-shadow: 0 30px 70px rgba(0,0,0,.35); }
+  @media (max-width: 560px) { form.qf { grid-template-columns: 1fr; padding: 24px; } }
+  .qf .full { grid-column: 1 / -1; }
+  .qf label { display: block; font-size: 13.5px; font-weight: 700; margin-bottom: 6px; }
+  .qf input, .qf textarea, .qf select { width: 100%; font: inherit; font-size: 15.5px; padding: 13px 14px; border: 1.5px solid var(--line); border-radius: 10px; background: var(--mist); color: var(--ink); transition: border-color .15s, background .15s; }
+  .qf input:focus, .qf textarea:focus, .qf select:focus { outline: none; border-color: var(--blue); background: #fff; }
+  .qf textarea { min-height: 110px; resize: vertical; }
+  .qf button { grid-column: 1 / -1; border: 0; cursor: pointer; font: inherit; font-weight: 700; font-size: 17px; background: var(--blue); color: #fff; padding: 17px; border-radius: 12px; display: flex; justify-content: center; align-items: center; gap: 10px; transition: background .15s; }
+  .qf button:hover { background: var(--blue-dark); }
+  .qf .hint { grid-column: 1 / -1; font-size: 13.5px; color: var(--muted); margin: -4px 0 0; text-align: center; }
+
+  footer { background: #101215; color: #8d97a5; padding: 54px 0 30px; font-size: 14.5px; }
+  .foot { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 36px; }
+  @media (max-width: 760px) { .foot { grid-template-columns: 1fr; } }
+  .foot h4 { color: #fff; font-size: 14px; letter-spacing: .1em; text-transform: uppercase; margin: 0 0 14px; }
+  .foot a { text-decoration: none; display: block; padding: 3px 0; }
+  .foot a:hover { color: #fff; }
+  .foot .brand b { color: #fff; }
+  .foot .brand img { background: #fff; border-radius: 10px; padding: 3px; }
+  .legal { border-top: 1px solid #23272d; margin-top: 40px; padding-top: 22px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+
+  /* Mobile sticky CTA */
+  .mbar { display: none; }
+  @media (max-width: 700px) {
+    .mbar { display: flex; position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 60; background: var(--blue); color: #fff; text-decoration: none; font-weight: 700; justify-content: center; align-items: center; gap: 10px; padding: 16px; border-radius: 14px; box-shadow: 0 12px 30px rgba(2,118,252,.5); }
+    body { padding-bottom: 84px; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
 </style>
 </head>
 <body>
 
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12l5 5L20 7"/></symbol>
+  <symbol id="i-camera" viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></symbol>
+  <symbol id="i-tag" viewBox="0 0 24 24"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.5"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2 6h12v10H2zM14 10h4l4 4v2h-8z"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></symbol>
+  <symbol id="i-broom" viewBox="0 0 24 24"><path d="M19 3l-7 7M9 11l4 4-5 6H3l1-5z"/><path d="M6 16l2 2"/></symbol>
+  <symbol id="i-sofa" viewBox="0 0 24 24"><path d="M4 11V8a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v3"/><path d="M2 12a2 2 0 0 1 4 0v2h12v-2a2 2 0 0 1 4 0v6H2z"/><path d="M5 18v2M19 18v2"/></symbol>
+  <symbol id="i-boxes" viewBox="0 0 24 24"><path d="M3 11h8v9H3zM13 11h8v9h-8zM8 3h8v8H8z"/></symbol>
+  <symbol id="i-garage" viewBox="0 0 24 24"><path d="M3 21V9l9-6 9 6v12"/><path d="M7 21v-9h10v9M7 15h10M7 18h10"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3M14 9l2 2"/></symbol>
+  <symbol id="i-hammer" viewBox="0 0 24 24"><path d="M14 4l6 6-3 3-6-6zM11 7l-8 8 3 3 8-8"/></symbol>
+  <symbol id="i-clip" viewBox="0 0 24 24"><path d="M9 4h6v3H9z"/><path d="M7 5H5v16h14V5h-2"/><path d="M9 12l2 2 4-4"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></symbol>
+  <symbol id="i-recycle" viewBox="0 0 24 24"><path d="M7 19H4l3-5M17 19h3l-3-5M9 5l3-2 3 5"/><path d="M7 14l-2-3M10 19h4M14 8l2 3"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><path d="M4 6h16v15H4zM4 10h16M8 3v4M16 3v4"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 5h18v14H3z"/><path d="M3 6l9 7 9-7"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+</svg>
+
 <header class="top">
   <div class="wrap">
-    <a class="logo" href="#"><img src="icon.png" alt="Haul Ace logo">HAUL<span>ACE</span></a>
-    <nav>
+    <a class="brand" href="#top" aria-label="Haul Ace home">
+      <img src="icon.png" alt="">
+      <div><b>HAUL<span>ACE</span></b><small>JUNK REMOVAL</small></div>
+    </a>
+    <nav class="menu">
       <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
       <a href="#how">How it works</a>
       <a href="#area">Service area</a>
-      <a class="btn small" href="#quote">Get a quote</a>
+      <a href="#faq">FAQ</a>
+      <a class="nav-cta" href="#quote">Free quote</a>
     </nav>
   </div>
 </header>
 
-<section class="hero">
+<main id="top">
+<section class="hero" style="padding:0">
   <div class="wrap">
     <div>
-    <div class="eyebrow">Junk Removal · North Richland Hills, TX</div>
-    <h1>Clear the clutter. <em>Ace the cleanup.</em></h1>
-    <p>Send us photos and get a clear scope and price. We load it, haul it, and sweep the work area before we leave.</p>
-    <div class="actions">
-      <a class="btn" href="#quote">Get a free photo quote</a>
-      <a class="btn ghost" href="#services">See what we haul</a>
+      <span class="kicker">North Richland Hills Junk Removal</span>
+      <h1>Clear the clutter. <span>Ace the cleanup.</span></h1>
+      <p class="lede">Send us a few photos and get a clear, upfront price. Our crew loads it, hauls it, and sweeps up before we leave. No surprises, no mess.</p>
+      <div class="hero-actions">
+        <a class="cta-primary" href="#quote">Get my free quote <svg class="i"><use href="#i-arrow"/></svg></a>
+        <a class="cta-text" href="#pricing">See pricing</a>
+      </div>
+      <div class="hero-points">
+        <span><svg class="i"><use href="#i-check"/></svg>Upfront photo quotes</span>
+        <span><svg class="i"><use href="#i-check"/></svg>No hidden fees</span>
+        <span><svg class="i"><use href="#i-check"/></svg>Sweep-up included</span>
+      </div>
     </div>
+    <div class="logo-card">
+      <img src="logo.png" alt="Haul Ace Junk Removal logo: a spade card with a pickup truck hauling boxes" width="900" height="822">
     </div>
-    <div class="hero-logo"><img src="logo.png" alt="Haul Ace Junk Removal: Clear the clutter. Ace the cleanup." width="900" height="822"></div>
   </div>
 </section>
+
+<div class="strip" aria-label="Why customers choose Haul Ace">
+  <div class="wrap">
+    <div><svg class="i"><use href="#i-camera"/></svg>Quotes from photos</div>
+    <div><svg class="i"><use href="#i-tag"/></svg>Price agreed before work</div>
+    <div><svg class="i"><use href="#i-broom"/></svg>We sweep every job</div>
+    <div><svg class="i"><use href="#i-pin"/></svg>Local NRH crew</div>
+  </div>
+</div>
 
 <section id="services">
   <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">Services</div>
-      <h2>What we haul</h2>
-      <p>Small to mid-size jobs, done right. Every price is agreed before we start, and any change gets your approval first.</p>
+    <div class="head">
+      <span class="kicker">Services</span>
+      <h2>Junk gone. Space back.</h2>
+      <p>From a single couch to a full garage, we handle the heavy lifting for homeowners, landlords, realtors and contractors.</p>
     </div>
-    <div class="grid">
-      <div class="card"><span class="tag">Ace Curbside</span><h3>Single-item pickup</h3><p>A couch, mattress, appliance or other single item that's easy to get to.</p></div>
-      <div class="card"><span class="tag">Truck loads</span><h3>Half &amp; full loads</h3><p>Furniture, boxes, yard clutter and household junk, priced by measured truck volume.</p></div>
-      <div class="card"><span class="tag">Garage Reset</span><h3>Garage cleanouts</h3><p>We clear the items you choose, sweep the floor, and send you finished photos.</p></div>
-      <div class="card"><span class="tag">Move-Out Finish</span><h3>Moving leftovers</h3><p>Clean-outs for renters, landlords and realtors, with an approved item list and completion photos.</p></div>
-      <div class="card"><span class="tag">Contractor Punch-Out</span><h3>Job-site cleanup</h3><p>Small debris and punch-list cleanup for remodelers and contractors, scheduled around your timeline.</p></div>
-      <div class="card"><span class="tag">For pros</span><h3>Ace Closeout Pack</h3><p>For agents and contractors: item list, before/after photos and a completion receipt for every job.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="how" style="padding-top:0">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">How it works</div>
-      <h2>Four simple steps</h2>
-    </div>
-    <div class="grid steps">
-      <div class="card"><h3>Send photos</h3><p>Email us pictures of what's going, your ZIP code, and any stairs or long carries.</p></div>
-      <div class="card"><h3>Get a clear price</h3><p>We send a written scope and price. Nothing is added without your OK.</p></div>
-      <div class="card"><h3>We load &amp; haul</h3><p>Our crew protects your floors and walls, loads everything safely and takes it to an approved facility.</p></div>
-      <div class="card"><h3>We sweep up</h3><p>We sweep the work area and do a final walkthrough with you, so the job is finished before we leave.</p></div>
+    <div class="svc-grid">
+      <div class="svc"><div class="ico"><svg class="i"><use href="#i-sofa"/></svg></div><h3>Furniture removal</h3><p>Couches, mattresses, recliners, tables and dressers carried out and hauled away.</p></div>
+      <div class="svc"><div class="ico"><svg class="i"><use href="#i-garage"/></svg></div><h3>Garage cleanouts</h3><p>We clear the items you pick, sweep the floor, and send you finished photos.</p></div>
+      <div class="svc"><div class="ico"><svg class="i"><use href="#i-boxes"/></svg></div><h3>Moving leftovers</h3><p>The stuff that didn't make the truck. Boxes, shelves and odds and ends, gone in one trip.</p></div>
+      <div class="svc"><div class="ico"><svg class="i"><use href="#i-key"/></svg></div><h3>Move-out cleanouts</h3><p>For landlords, property managers and agents. Approved item list, deadline met, photos delivered.</p></div>
+      <div class="svc"><div class="ico"><svg class="i"><use href="#i-hammer"/></svg></div><h3>Contractor punch-out</h3><p>Light remodel debris and job-site cleanup scheduled around your closeout date.</p></div>
+      <div class="svc"><div class="ico"><svg class="i"><use href="#i-truck"/></svg></div><h3>Curbside pickup</h3><p>Already at the curb? Quick, simple pricing for easy-to-reach single items.</p></div>
     </div>
   </div>
 </section>
 
-<section id="area" class="band">
+<section id="pricing" class="pricing">
   <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">Service area</div>
-      <h2>Serving Northeast Tarrant County</h2>
-      <p>We're based in North Richland Hills and schedule jobs on tight local routes. Just outside the area? Ask us anyway.</p>
+    <div class="head">
+      <span class="kicker">Pricing</span>
+      <h2>Straightforward pricing.</h2>
+      <p>You pay for the space your junk takes up in our truck. Every quote is confirmed before we lift a thing.</p>
     </div>
-    <div class="areas">
-      <span class="main">North Richland Hills</span>
-      <span>Hurst</span>
-      <span>Bedford</span>
-      <span>Watauga</span>
-      <span>Keller</span>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">Good to know</div>
-      <h2>What we take, and what we don't</h2>
-    </div>
-    <div class="two">
-      <div class="card">
-        <h3>We take</h3>
-        <ul class="check">
-          <li>Furniture, mattresses and household items</li>
-          <li>Garage and storage clutter</li>
-          <li>Moving leftovers and boxes</li>
-          <li>Light construction and remodel debris</li>
-          <li>Yard and patio items</li>
-        </ul>
+    <div class="price-grid">
+      <div class="price">
+        <h3>Ace Curbside</h3>
+        <div class="from">Single item, starting at</div>
+        <div class="amt"><small>$</small>125</div>
+        <ul><li>One easy-to-reach item</li><li>Curbside or garage-door pickup</li><li>Disposal included</li></ul>
       </div>
-      <div class="card">
-        <h3>We can't take</h3>
-        <ul class="check no">
-          <li>Paint, chemicals and solvents</li>
-          <li>Unknown drums or containers</li>
-          <li>Asbestos or medical waste</li>
-          <li>Tires, freon appliances and electronics (ask us first)</li>
-          <li>Heavy concrete, dirt or shingles (quoted by weight, if at all)</li>
-        </ul>
+      <div class="price featured">
+        <span class="badge">Most popular</span>
+        <h3>Half truck load</h3>
+        <div class="from">Starting at</div>
+        <div class="amt"><small>$</small>200</div>
+        <ul><li>Measured half-bed volume</li><li>Loading, hauling and disposal</li><li>Sweep-up included</li></ul>
+      </div>
+      <div class="price">
+        <h3>Full truck load</h3>
+        <div class="from">Starting at</div>
+        <div class="amt"><small>$</small>300</div>
+        <ul><li>One full measured truck bed</li><li>Loading, hauling and disposal</li><li>Final walkthrough with you</li></ul>
       </div>
     </div>
+    <p class="price-note"><strong>Bigger jobs?</strong> Garage resets, move-outs and contractor cleanups are quoted by scope. Stairs, long carries and heavy materials like concrete or dirt are priced separately and always disclosed before you approve. Applicable sales tax is added.</p>
   </div>
 </section>
 
-<section id="quote" class="contact" style="padding-top:0">
+<section id="how">
   <div class="wrap">
-    <div class="card">
-      <div class="eyebrow">Free quote</div>
-      <h2>Ready to clear it out?</h2>
-      <p style="color:var(--muted);margin:0">Email photos of your items with your ZIP code. We'll reply with a clear scope and price.</p>
-      <a class="email" href="mailto:haulacejunkremoval@gmail.com?subject=Junk%20removal%20quote">haulacejunkremoval@gmail.com</a>
-      <a class="btn" href="mailto:haulacejunkremoval@gmail.com?subject=Junk%20removal%20quote">Email us for a quote</a>
-      <div class="hours"><strong>Hours:</strong> Monday – Friday, 9:00 AM – 5:00 PM</div>
+    <div class="head center">
+      <span class="kicker">How it works</span>
+      <h2>Four steps to a clear space.</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><h3>Send photos</h3><p>Snap a few pictures and tell us your ZIP, plus any stairs or long carries.</p></div>
+      <div class="step"><div class="n">2</div><h3>Get your price</h3><p>We reply with a written scope and price. You approve it before we schedule.</p></div>
+      <div class="step"><div class="n">3</div><h3>We load &amp; haul</h3><p>Our crew protects your floors and walls, loads safely and drives it to an approved facility.</p></div>
+      <div class="step"><div class="n">4</div><h3>We sweep up</h3><p>We sweep the work area and walk through it with you, so the job is truly done.</p></div>
     </div>
   </div>
 </section>
+
+<section class="why">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker">The Haul Ace standard</span>
+      <h2>The details we never skip.</h2>
+      <p>Built by a crew with years in construction, roofing and homeowner service. We run every job like it's in our own driveway.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-item"><div class="ico"><svg class="i"><use href="#i-shield"/></svg></div><div><h3>No price surprises</h3><p>If anything changes on site, you approve the new price before we do any extra work. Period.</p></div></div>
+      <div class="why-item"><div class="ico"><svg class="i"><use href="#i-broom"/></svg></div><div><h3>Clean Finish Standard</h3><p>Every ordinary job ends with a sweep and a final walkthrough, built into the quote.</p></div></div>
+      <div class="why-item"><div class="ico"><svg class="i"><use href="#i-tag"/></svg></div><div><h3>Keep, Donate, Haul tags</h3><p>Tag what stays and what goes so nothing gets taken by mistake. Usable items can go to donation when a charity accepts them.</p></div></div>
+      <div class="why-item"><div class="ico"><svg class="i"><use href="#i-clip"/></svg></div><div><h3>Ace Closeout Pack</h3><p>For agents and contractors: item list, before and after photos and a completion receipt on one page.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="items">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker">What we take</span>
+      <h2>If it fits, we haul it.</h2>
+      <p>Not sure about something? Send a photo and ask. We'll tell you straight.</p>
+    </div>
+    <div class="items">
+      <div class="box yes">
+        <h3><svg class="i" style="color:var(--blue)"><use href="#i-check"/></svg>We take</h3>
+        <div class="chips">
+          <span>Couches &amp; sofas</span><span>Mattresses</span><span>Dressers &amp; tables</span><span>Boxes &amp; clutter</span><span>Exercise equipment</span><span>Patio furniture</span><span>Shelving</span><span>Toys &amp; bikes</span><span>Light remodel debris</span><span>Carpet &amp; padding</span><span>Yard junk</span>
+        </div>
+      </div>
+      <div class="box no">
+        <h3><svg class="i" style="color:#b4442b"><use href="#i-x"/></svg>We can't take</h3>
+        <div class="chips">
+          <span>Paint &amp; chemicals</span><span>Solvents &amp; fuels</span><span>Unknown drums</span><span>Asbestos</span><span>Medical waste</span>
+        </div>
+        <p class="note">Tires, refrigerators, AC units and electronics need special handling, so ask first. Concrete, dirt and shingles are quoted by weight.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="area" class="area">
+  <div class="wrap area-grid">
+    <div>
+      <span class="kicker">Service area</span>
+      <h2 style="font-size:clamp(32px,4.4vw,48px);font-weight:900;margin-top:14px">Serving Northeast Tarrant County.</h2>
+      <p style="color:var(--muted);font-size:18px">We're based in North Richland Hills and run tight local routes, so you get a crew that shows up on time.</p>
+      <div class="towns">
+        <div class="home"><svg class="i"><use href="#i-pin"/></svg>North Richland Hills</div>
+        <div><svg class="i"><use href="#i-pin"/></svg>Hurst</div>
+        <div><svg class="i"><use href="#i-pin"/></svg>Bedford</div>
+        <div><svg class="i"><use href="#i-pin"/></svg>Watauga</div>
+        <div><svg class="i"><use href="#i-pin"/></svg>Keller</div>
+      </div>
+      <p style="color:var(--muted);font-size:15px;margin-top:18px">Just outside these towns? Ask anyway. We can often fit you into a nearby route.</p>
+    </div>
+    <div class="map">
+      <iframe title="Map of the Haul Ace service area around North Richland Hills, TX" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=North%20Richland%20Hills%2C%20TX&amp;z=11&amp;output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="head center">
+      <span class="kicker">FAQ</span>
+      <h2>Good questions.</h2>
+    </div>
+    <div class="faq">
+      <details open><summary>How do I get a price?</summary><p>Fill out the quote form below or email photos of your items with your ZIP code. Tell us about stairs, long carries or tight access. We reply with a written scope and price.</p></details>
+      <details><summary>Will the price change when you show up?</summary><p>Only if the job is different from the photos, and never without your OK. We walk the scope with you on arrival, and any change is approved before we start loading.</p></details>
+      <details><summary>Do I need to be home?</summary><p>Not always. For curbside or garage pickups we can work while you're out, as long as access is arranged ahead of time. We'll send photos when we're done.</p></details>
+      <details><summary>Where does my junk go?</summary><p>Everything goes to an authorized disposal facility. When you'd like, usable items can go to donation if a local charity accepts them.</p></details>
+      <details><summary>Do you work with realtors, landlords and contractors?</summary><p>Yes. We offer move-out cleanouts, contractor punch-out cleanups and the Ace Closeout Pack with photos and a completion receipt. Ask about reserved route days for repeat work.</p></details>
+      <details><summary>How do I pay?</summary><p>Payment is collected when the job is complete and you've done the final walkthrough. We'll confirm accepted payment methods with your quote.</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="quote" class="quote">
+  <div class="wrap quote-grid">
+    <div>
+      <div class="head" style="margin-bottom:24px">
+        <span class="kicker">Free quote</span>
+        <h2>Ready to clear it out?</h2>
+        <p>Tell us what's going and we'll get back to you with a clear, upfront price.</p>
+      </div>
+      <div class="contact-line"><div class="ico"><svg class="i"><use href="#i-mail"/></svg></div><div><small>Email</small><a href="mailto:haulacejunkremoval@gmail.com">haulacejunkremoval@gmail.com</a></div></div>
+      <div class="contact-line"><div class="ico"><svg class="i"><use href="#i-clock"/></svg></div><div><small>Hours</small>Monday to Friday, 9 AM to 5 PM</div></div>
+      <div class="contact-line"><div class="ico"><svg class="i"><use href="#i-pin"/></svg></div><div><small>Based in</small>North Richland Hills, TX</div></div>
+    </div>
+    <form class="qf" id="qf" novalidate>
+      <div><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required></div>
+      <div><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
+      <div><label for="f-zip">ZIP code</label><input id="f-zip" name="zip" inputmode="numeric" autocomplete="postal-code" required></div>
+      <div><label for="f-type">Job type</label>
+        <select id="f-type" name="type">
+          <option>Single item</option><option>Half truck load</option><option>Full truck load</option><option>Garage cleanout</option><option>Move-out cleanout</option><option>Contractor cleanup</option><option>Not sure</option>
+        </select>
+      </div>
+      <div class="full"><label for="f-items">What needs to go?</label><textarea id="f-items" name="items" placeholder="Example: old sectional couch, 10 boxes, a treadmill. Garage, no stairs." required></textarea></div>
+      <button type="submit">Send my quote request <svg class="i" style="width:20px;height:20px"><use href="#i-arrow"/></svg></button>
+      <p class="hint">This opens your email app with your details filled in. Attach a few photos for the fastest quote.</p>
+    </form>
+  </div>
+</section>
+</main>
 
 <footer>
   <div class="wrap">
-    <div><img src="icon.png" alt="" style="width:22px;height:22px;vertical-align:-5px;border-radius:4px;margin-right:8px"><strong>Haul Ace</strong> · Junk Removal · North Richland Hills, TX</div>
-    <div>© 2026 Haul Ace</div>
+    <div class="foot">
+      <div>
+        <a class="brand" href="#top"><img src="icon.png" alt=""><div><b>HAUL<span>ACE</span></b><small>JUNK REMOVAL</small></div></a>
+        <p style="margin-top:16px;max-width:320px">Clear the clutter. Ace the cleanup. Local junk removal for North Richland Hills and Northeast Tarrant County.</p>
+      </div>
+      <div><h4>Services</h4><a href="#services">Furniture removal</a><a href="#services">Garage cleanouts</a><a href="#services">Move-out cleanouts</a><a href="#services">Contractor cleanup</a></div>
+      <div><h4>Contact</h4><a href="mailto:haulacejunkremoval@gmail.com">haulacejunkremoval@gmail.com</a><a href="#quote">Request a quote</a><span style="display:block;padding:3px 0">Mon to Fri, 9 AM to 5 PM</span></div>
+    </div>
+    <div class="legal"><span>© 2026 Haul Ace. All rights reserved.</span><span>North Richland Hills, Texas</span></div>
   </div>
 </footer>
 
+<a class="mbar" href="#quote">Get my free quote <svg class="i" style="width:20px;height:20px"><use href="#i-arrow"/></svg></a>
+
+<script>
+  document.getElementById('qf').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var f = e.target;
+    var name = f.name.value.trim(), zip = f.zip.value.trim(), items = f.items.value.trim();
+    if (!name || !zip || !items) { (!name ? f.name : !zip ? f.zip : f.items).focus(); return; }
+    var body = 'Name: ' + name + '\nPhone: ' + f.phone.value.trim() + '\nZIP: ' + zip + '\nJob type: ' + f.type.value + '\n\nWhat needs to go:\n' + items + '\n\n(Photos attached)';
+    window.location.href = 'mailto:haulacejunkremoval@gmail.com?subject=' + encodeURIComponent('Quote request: ' + f.type.value + ' in ' + zip) + '&body=' + encodeURIComponent(body);
+  });
+</script>
 </body>
 </html>
