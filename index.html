@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Haul Ace Junk Removal | North Richland Hills, TX</title>
+<meta name="description" content="Haul Ace is a local junk removal crew serving North Richland Hills, Hurst, Bedford, Watauga and Keller, TX. Send photos, get a clear price, and we load, haul and sweep.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #142536;
+    --navy-2: #1d3449;
+    --orange: #F47721;
+    --orange-dark: #d9620f;
+    --cream: #F7F3EA;
+    --ink: #142536;
+    --muted: #4b5a68;
+    --line: #e4dccb;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; font-family: Inter, system-ui, sans-serif; color: var(--ink); background: var(--cream); line-height: 1.6; }
+  h1, h2, h3 { font-family: Archivo, Inter, sans-serif; line-height: 1.1; margin: 0 0 .5em; }
+  a { color: inherit; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+
+  header.top { background: var(--navy); color: var(--cream); position: sticky; top: 0; z-index: 10; }
+  header.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; font-family: Archivo, sans-serif; font-weight: 900; font-size: 22px; letter-spacing: .5px; }
+  .logo span { color: var(--orange); }
+  .logo img { width: 34px; height: 34px; }
+  nav a { text-decoration: none; margin-left: 22px; font-weight: 500; font-size: 15px; opacity: .9; }
+  nav a:hover { opacity: 1; color: var(--orange); }
+  @media (max-width: 680px) { nav a:not(.btn) { display: none; } }
+
+  .btn { display: inline-block; background: var(--orange); color: #fff; text-decoration: none; font-weight: 600; padding: 12px 22px; border-radius: 8px; transition: background .15s; }
+  .btn:hover { background: var(--orange-dark); }
+  .btn.small { padding: 8px 16px; font-size: 14px; }
+  .btn.ghost { background: transparent; border: 2px solid var(--cream); color: var(--cream); }
+  .btn.ghost:hover { background: rgba(255,255,255,.08); }
+
+  .hero { background: var(--navy); color: var(--cream); padding: 80px 0 96px; position: relative; overflow: hidden; }
+  .hero::after { content: ""; position: absolute; right: -120px; bottom: -160px; width: 460px; height: 460px; border-radius: 50%; background: var(--orange); opacity: .12; }
+  .eyebrow { color: var(--orange); font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; font-size: 13px; }
+  .hero h1 { font-size: clamp(38px, 6vw, 64px); font-weight: 900; max-width: 720px; }
+  .hero h1 em { font-style: normal; color: var(--orange); }
+  .hero p { font-size: 19px; max-width: 580px; opacity: .9; margin: 0 0 32px; }
+  .hero .actions { display: flex; gap: 14px; flex-wrap: wrap; position: relative; z-index: 1; }
+
+  section { padding: 80px 0; }
+  .section-head { max-width: 640px; margin-bottom: 40px; }
+  .section-head h2 { font-size: clamp(28px, 4vw, 40px); }
+  .section-head p { color: var(--muted); margin: 0; }
+
+  .grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+  .card { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 26px; }
+  .card h3 { font-size: 20px; }
+  .card p { color: var(--muted); margin: 0; font-size: 15px; }
+  .card .tag { display: inline-block; font-size: 12px; font-weight: 600; color: var(--orange-dark); background: #fdeedf; border-radius: 99px; padding: 3px 10px; margin-bottom: 12px; }
+
+  .steps { counter-reset: step; }
+  .steps .card { position: relative; padding-top: 58px; }
+  .steps .card::before { counter-increment: step; content: counter(step); position: absolute; top: 20px; left: 26px; width: 30px; height: 30px; border-radius: 50%; background: var(--navy); color: var(--cream); font-family: Archivo, sans-serif; font-weight: 700; display: grid; place-items: center; font-size: 15px; }
+
+  .band { background: var(--navy); color: var(--cream); }
+  .band .section-head p { color: rgba(247,243,234,.75); }
+  .areas { display: flex; flex-wrap: wrap; gap: 12px; }
+  .areas span { border: 1.5px solid rgba(247,243,234,.35); border-radius: 99px; padding: 8px 18px; font-weight: 500; }
+  .areas span.main { background: var(--orange); border-color: var(--orange); color: #fff; }
+
+  .two { display: grid; gap: 20px; grid-template-columns: 1fr 1fr; }
+  @media (max-width: 760px) { .two { grid-template-columns: 1fr; } }
+  ul.check { list-style: none; padding: 0; margin: 0; }
+  ul.check li { padding: 8px 0 8px 30px; position: relative; border-bottom: 1px solid var(--line); }
+  ul.check li:last-child { border-bottom: 0; }
+  ul.check li::before { content: "✓"; position: absolute; left: 0; color: var(--orange); font-weight: 700; }
+  ul.check.no li::before { content: "✕"; color: #b4442b; }
+
+  .contact { text-align: center; }
+  .contact .card { max-width: 620px; margin: 0 auto; padding: 44px 32px; }
+  .contact h2 { font-size: clamp(28px, 4vw, 40px); }
+  .contact .email { display: block; font-size: 20px; font-weight: 600; margin: 18px 0 26px; color: var(--navy); word-break: break-all; }
+  .hours { color: var(--muted); font-size: 15px; margin-top: 22px; }
+
+  footer { background: var(--navy); color: rgba(247,243,234,.7); padding: 30px 0; font-size: 14px; }
+  footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+  footer strong { color: var(--cream); }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#"><img src="favicon.svg" alt="">HAUL <span>ACE</span></a>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#how">How it works</a>
+      <a href="#area">Service area</a>
+      <a class="btn small" href="#quote">Get a quote</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Junk Removal · North Richland Hills, TX</div>
+    <h1>Clear the clutter. <em>Ace the cleanup.</em></h1>
+    <p>Send us photos and get a clear scope and price. We load it, haul it, and sweep the work area before we leave.</p>
+    <div class="actions">
+      <a class="btn" href="#quote">Get a free photo quote</a>
+      <a class="btn ghost" href="#services">See what we haul</a>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Services</div>
+      <h2>What we haul</h2>
+      <p>Small to mid-size jobs, done right. Every price is agreed before we start, and any change gets your approval first.</p>
+    </div>
+    <div class="grid">
+      <div class="card"><span class="tag">Ace Curbside</span><h3>Single-item pickup</h3><p>A couch, mattress, appliance or other single item that's easy to get to.</p></div>
+      <div class="card"><span class="tag">Truck loads</span><h3>Half &amp; full loads</h3><p>Furniture, boxes, yard clutter and household junk, priced by measured truck volume.</p></div>
+      <div class="card"><span class="tag">Garage Reset</span><h3>Garage cleanouts</h3><p>We clear the items you choose, sweep the floor, and send you finished photos.</p></div>
+      <div class="card"><span class="tag">Move-Out Finish</span><h3>Moving leftovers</h3><p>Clean-outs for renters, landlords and realtors, with an approved item list and completion photos.</p></div>
+      <div class="card"><span class="tag">Contractor Punch-Out</span><h3>Job-site cleanup</h3><p>Small debris and punch-list cleanup for remodelers and contractors, scheduled around your timeline.</p></div>
+      <div class="card"><span class="tag">For pros</span><h3>Ace Closeout Pack</h3><p>For agents and contractors: item list, before/after photos and a completion receipt for every job.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="how" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">How it works</div>
+      <h2>Four simple steps</h2>
+    </div>
+    <div class="grid steps">
+      <div class="card"><h3>Send photos</h3><p>Email us pictures of what's going, your ZIP code, and any stairs or long carries.</p></div>
+      <div class="card"><h3>Get a clear price</h3><p>We send a written scope and price. Nothing is added without your OK.</p></div>
+      <div class="card"><h3>We load &amp; haul</h3><p>Our crew protects your floors and walls, loads everything safely and takes it to an approved facility.</p></div>
+      <div class="card"><h3>We sweep up</h3><p>We sweep the work area and do a final walkthrough with you, so the job is finished before we leave.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="area" class="band">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Service area</div>
+      <h2>Serving Northeast Tarrant County</h2>
+      <p>We're based in North Richland Hills and schedule jobs on tight local routes. Just outside the area? Ask us anyway.</p>
+    </div>
+    <div class="areas">
+      <span class="main">North Richland Hills</span>
+      <span>Hurst</span>
+      <span>Bedford</span>
+      <span>Watauga</span>
+      <span>Keller</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Good to know</div>
+      <h2>What we take, and what we don't</h2>
+    </div>
+    <div class="two">
+      <div class="card">
+        <h3>We take</h3>
+        <ul class="check">
+          <li>Furniture, mattresses and household items</li>
+          <li>Garage and storage clutter</li>
+          <li>Moving leftovers and boxes</li>
+          <li>Light construction and remodel debris</li>
+          <li>Yard and patio items</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>We can't take</h3>
+        <ul class="check no">
+          <li>Paint, chemicals and solvents</li>
+          <li>Unknown drums or containers</li>
+          <li>Asbestos or medical waste</li>
+          <li>Tires, freon appliances and electronics (ask us first)</li>
+          <li>Heavy concrete, dirt or shingles (quoted by weight, if at all)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="quote" class="contact" style="padding-top:0">
+  <div class="wrap">
+    <div class="card">
+      <div class="eyebrow">Free quote</div>
+      <h2>Ready to clear it out?</h2>
+      <p style="color:var(--muted);margin:0">Email photos of your items with your ZIP code. We'll reply with a clear scope and price.</p>
+      <a class="email" href="mailto:haulacejunkremoval@gmail.com?subject=Junk%20removal%20quote">haulacejunkremoval@gmail.com</a>
+      <a class="btn" href="mailto:haulacejunkremoval@gmail.com?subject=Junk%20removal%20quote">Email us for a quote</a>
+      <div class="hours"><strong>Hours:</strong> Monday – Friday, 9:00 AM – 5:00 PM</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><strong>Haul Ace</strong> · Junk Removal · North Richland Hills, TX</div>
+    <div>© 2026 Haul Ace</div>
+  </div>
+</footer>
+
+</body>
+</html>
