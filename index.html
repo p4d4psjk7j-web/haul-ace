@@ -5,33 +5,34 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Haul Ace Junk Removal | North Richland Hills, TX</title>
 <meta name="description" content="Haul Ace is a local junk removal crew serving North Richland Hills, Hurst, Bedford, Watauga and Keller, TX. Send photos, get a clear price, and we load, haul and sweep.">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.png" type="image/png">
+<meta property="og:image" content="https://p4d4psjk7j-web.github.io/haul-ace/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --navy: #142536;
-    --navy-2: #1d3449;
-    --orange: #F47721;
-    --orange-dark: #d9620f;
-    --cream: #F7F3EA;
+    --navy: #181B1F;
+    --navy-2: #24282e;
+    --orange: #0276FC;
+    --orange-dark: #005fd1;
+    --cream: #FEFDFA;
     --ink: #142536;
     --muted: #4b5a68;
-    --line: #e4dccb;
+    --line: #e3e6ea;
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
-  body { margin: 0; font-family: Inter, system-ui, sans-serif; color: var(--ink); background: var(--cream); line-height: 1.6; }
+  body { margin: 0; font-family: Inter, system-ui, sans-serif; color: var(--ink); background: #f3f5f8; line-height: 1.6; }
   h1, h2, h3 { font-family: Archivo, Inter, sans-serif; line-height: 1.1; margin: 0 0 .5em; }
   a { color: inherit; }
   .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
 
-  header.top { background: var(--navy); color: var(--cream); position: sticky; top: 0; z-index: 10; }
+  header.top { background: #fff; color: var(--navy); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 10; }
   header.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
   .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; font-family: Archivo, sans-serif; font-weight: 900; font-size: 22px; letter-spacing: .5px; }
   .logo span { color: var(--orange); }
-  .logo img { width: 34px; height: 34px; }
+  .logo img { width: 44px; height: 44px; }
   nav a { text-decoration: none; margin-left: 22px; font-weight: 500; font-size: 15px; opacity: .9; }
   nav a:hover { opacity: 1; color: var(--orange); }
   @media (max-width: 680px) { nav a:not(.btn) { display: none; } }
@@ -43,7 +44,10 @@
   .btn.ghost:hover { background: rgba(255,255,255,.08); }
 
   .hero { background: var(--navy); color: var(--cream); padding: 80px 0 96px; position: relative; overflow: hidden; }
-  .hero::after { content: ""; position: absolute; right: -120px; bottom: -160px; width: 460px; height: 460px; border-radius: 50%; background: var(--orange); opacity: .12; }
+  .hero .wrap { display: grid; grid-template-columns: 1.2fr 1fr; gap: 48px; align-items: center; }
+  .hero-logo { background: #fff; border-radius: 20px; padding: 24px; box-shadow: 0 20px 50px rgba(0,0,0,.35); }
+  .hero-logo img { width: 100%; height: auto; display: block; }
+  @media (max-width: 820px) { .hero .wrap { grid-template-columns: 1fr; } .hero-logo { max-width: 420px; } }
   .eyebrow { color: var(--orange); font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; font-size: 13px; }
   .hero h1 { font-size: clamp(38px, 6vw, 64px); font-weight: 900; max-width: 720px; }
   .hero h1 em { font-style: normal; color: var(--orange); }
@@ -59,7 +63,7 @@
   .card { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 26px; }
   .card h3 { font-size: 20px; }
   .card p { color: var(--muted); margin: 0; font-size: 15px; }
-  .card .tag { display: inline-block; font-size: 12px; font-weight: 600; color: var(--orange-dark); background: #fdeedf; border-radius: 99px; padding: 3px 10px; margin-bottom: 12px; }
+  .card .tag { display: inline-block; font-size: 12px; font-weight: 600; color: var(--orange-dark); background: #e3efff; border-radius: 99px; padding: 3px 10px; margin-bottom: 12px; }
 
   .steps { counter-reset: step; }
   .steps .card { position: relative; padding-top: 58px; }
@@ -94,7 +98,7 @@
 
 <header class="top">
   <div class="wrap">
-    <a class="logo" href="#"><img src="favicon.svg" alt="">HAUL <span>ACE</span></a>
+    <a class="logo" href="#"><img src="icon.png" alt="Haul Ace logo">HAUL<span>ACE</span></a>
     <nav>
       <a href="#services">Services</a>
       <a href="#how">How it works</a>
@@ -106,6 +110,7 @@
 
 <section class="hero">
   <div class="wrap">
+    <div>
     <div class="eyebrow">Junk Removal · North Richland Hills, TX</div>
     <h1>Clear the clutter. <em>Ace the cleanup.</em></h1>
     <p>Send us photos and get a clear scope and price. We load it, haul it, and sweep the work area before we leave.</p>
@@ -113,6 +118,8 @@
       <a class="btn" href="#quote">Get a free photo quote</a>
       <a class="btn ghost" href="#services">See what we haul</a>
     </div>
+    </div>
+    <div class="hero-logo"><img src="logo.png" alt="Haul Ace Junk Removal: Clear the clutter. Ace the cleanup." width="900" height="822"></div>
   </div>
 </section>
 
@@ -212,7 +219,7 @@
 
 <footer>
   <div class="wrap">
-    <div><strong>Haul Ace</strong> · Junk Removal · North Richland Hills, TX</div>
+    <div><img src="icon.png" alt="" style="width:22px;height:22px;vertical-align:-5px;border-radius:4px;margin-right:8px"><strong>Haul Ace</strong> · Junk Removal · North Richland Hills, TX</div>
     <div>© 2026 Haul Ace</div>
   </div>
 </footer>
